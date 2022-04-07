@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjercicioValidaciones.Views.Main">
     <ContentPage.Content>
-        <StackLayout >
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+        <StackLayout Margin="30,100,0,0" >
+            <StackLayout Orientation="Horizontal" >
                 <Label Text="Nombre"/>
-                <Entry/>
+                <Entry WidthRequest="250"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
                 <Label Text="Edad"/>
-                <Entry/>
+                <Entry WidthRequest="50"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
