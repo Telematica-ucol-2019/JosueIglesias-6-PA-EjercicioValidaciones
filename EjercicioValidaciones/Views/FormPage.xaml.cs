@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EjercicioValidaciones.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace EjercicioValidaciones.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Main : ContentPage
+    public partial class FormPage : ContentPage
     {
-        public Main()
+        public FormPage()
         {
             InitializeComponent();
+            BindingContext = new FormViewModel();
         }
     }
 }

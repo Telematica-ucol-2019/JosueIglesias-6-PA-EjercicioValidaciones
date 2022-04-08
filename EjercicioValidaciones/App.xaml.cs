@@ -11,7 +11,7 @@ namespace EjercicioValidaciones
         {
             InitializeComponent();
 
-            MainPage = new Main();
+            MainPage = new FormPage();
         }
 
         protected override void OnStart()

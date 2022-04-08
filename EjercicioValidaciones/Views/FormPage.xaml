@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EjercicioValidaciones.Views.Main">
+             x:Class="EjercicioValidaciones.Views.FormPage">
     <ContentPage.Content>
         <StackLayout Margin="30,100,0,0" >
             <StackLayout Orientation="Horizontal" >
-                <Label Text="Nombre"/>
-                <Entry WidthRequest="250"/>
+                <Label Text="Name"/>
+                <Entry WidthRequest="250" Text="{Binding NameTxt, Mode=TwoWay}"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
-                <Label Text="Edad"/>
-                <Entry WidthRequest="50"/>
+                <Label Text="Age"/>
+                <Entry WidthRequest="50" Text="{Binding AgeNum, Mode=TwoWay}"/>
             </StackLayout>
+            <Button Text="Register" WidthRequest="100" HorizontalOptions="Center" 
+                    Command="{Binding RegisterCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
